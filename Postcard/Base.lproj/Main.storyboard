@@ -59,18 +59,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="avx-PE-K0m">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="216" y="130" width="80" height="80"/>
-                                </variation>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-F7-NGd">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="228" width="280" height="30"/>
+                                    <rect key="frame" x="16" y="346" width="280" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aG-X6-4y5">
@@ -78,7 +72,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="271" width="280" height="30"/>
+                                    <rect key="frame" x="16" y="389" width="280" height="30"/>
                                 </variation>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOS-b8-c0z">
@@ -87,7 +81,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="77" width="280" height="51"/>
+                                    <rect key="frame" x="16" y="77" width="192" height="109"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5m-Gb-OPO">
@@ -98,38 +92,56 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="180" width="192" height="30"/>
+                                    <rect key="frame" x="16" y="298" width="192" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="senMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2jS-G9-6Ha"/>
+                                    <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jjs-fa-csO"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJx-56-KuA" userLabel="Name Displayed">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="212" width="192" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="avx-PE-K0m">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="216" y="83" width="80" height="80"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="avx-PE-K0m"/>
                                 <exclude reference="ULf-F7-NGd"/>
                                 <exclude reference="5aG-X6-4y5"/>
                                 <exclude reference="OOS-b8-c0z"/>
                                 <exclude reference="q5m-Gb-OPO"/>
+                                <exclude reference="AJx-56-KuA"/>
+                                <exclude reference="avx-PE-K0m"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="avx-PE-K0m"/>
                                 <include reference="ULf-F7-NGd"/>
                                 <include reference="5aG-X6-4y5"/>
                                 <include reference="OOS-b8-c0z"/>
                                 <include reference="q5m-Gb-OPO"/>
+                                <include reference="AJx-56-KuA"/>
+                                <include reference="avx-PE-K0m"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="enterMessageTextField" destination="5aG-X6-4y5" id="dGF-S7-mxJ"/>
                         <outlet property="enterNameTextField" destination="ULf-F7-NGd" id="ZrA-bH-Kdc"/>
-                        <outlet property="maileButton" destination="q5m-Gb-OPO" id="VKv-Hh-6a2"/>
+                        <outlet property="mailButton" destination="q5m-Gb-OPO" id="iHt-e4-c6G"/>
                         <outlet property="messageLabel" destination="OOS-b8-c0z" id="K9a-69-qsW"/>
+                        <outlet property="nameLabel" destination="AJx-56-KuA" id="W3m-Ch-HA8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
